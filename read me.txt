@@ -1,0 +1,7 @@
+0 represents empty cell
+1 represents x
+2 represents o
+index 0 of every array is the indicator for who the winner is.
+if index[0] == 0 => draw
+if index[0] == 1 => x wins
+if index[2] == 2 => o wins
