@@ -1,6 +1,6 @@
 import board_check
 state_list = []
-def baseb(n, b):
+def baseb(n, b): # This function converts any decimal value to base 3 value
     e = n//b
     q = n%b
     if n == 0:
@@ -16,7 +16,7 @@ o = 0
 for i in range(19683):
     state = list(baseb(i, 3))
     str_state = str(state)
-    if str_state.count('0') <= 4:
+    if str_state.count('0') <= 4: # There can't be more than 4 zeroes in a complete set of legal moves in tic tac toe. The same goes for other conditions as well
         if str_state.count('1') >= 4 and str_state.count('1') <= 5:
             if str_state.count('2') >= 2 and str_state.count('2') <= 4:
                 state = board_check.sorter(state)
